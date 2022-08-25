@@ -1,0 +1,3 @@
+[submodule "MatchGame/Assets/GameDevTools"]
+	path = MatchGame/Assets/GameDevTools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools
