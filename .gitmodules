@@ -1,3 +1,6 @@
 [submodule "MatchGame/Assets/GameDevTools"]
 	path = MatchGame/Assets/GameDevTools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools
+[submodule "DGM1610"]
+	path = DGM1610
+	url = https://github.com/Kaleighuh/DGM1610
