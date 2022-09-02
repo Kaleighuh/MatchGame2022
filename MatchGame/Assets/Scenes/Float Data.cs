@@ -1,7 +1,12 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class FloatData : ScriptableObject
+public class Float : ScriptableObject
 {
     public float value;
+
+    public void UpdateValue(float num)
+    {
+        value += num;
+    }
 }
