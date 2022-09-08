@@ -8,7 +8,7 @@ public class ChallengeFloatData : ScriptableObject
     public int value; //health
     public void UpdateValue(int number);
     {
-        value += number;
+        value += number ;
     }
 
 }
