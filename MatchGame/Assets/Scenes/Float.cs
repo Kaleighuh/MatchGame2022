@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 [CreateAssetMenu]
 public class Float : ScriptableObject
@@ -15,3 +15,4 @@ public class Float : ScriptableObject
         value += num;
     }
 }
+*/

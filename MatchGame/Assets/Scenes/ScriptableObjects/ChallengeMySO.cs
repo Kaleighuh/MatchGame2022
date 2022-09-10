@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 [CreateAssetMenu]
 public class ChallengeMySO : ScriptableObject //character stats
@@ -12,3 +12,4 @@ public class ChallengeMySO : ScriptableObject //character stats
     public float health;
     public float damage;
 }
+*/

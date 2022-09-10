@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 [CreateAssetMenu]
 public class ChallengeInt : ScriptableObject
@@ -11,3 +11,4 @@ public class ChallengeInt : ScriptableObject
         value += num;
     }
 }
+*/
