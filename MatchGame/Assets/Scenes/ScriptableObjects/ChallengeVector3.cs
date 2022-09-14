@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 [CreateAssetMenu]
 public class ChallengeVector3 : ScriptableObject
@@ -10,3 +10,4 @@ public class ChallengeVector3 : ScriptableObject
         triggerEnterEvent.Invoke();
     } //Anthony Romrell lectures
 }
+*/

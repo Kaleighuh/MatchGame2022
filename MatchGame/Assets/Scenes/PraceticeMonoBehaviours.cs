@@ -7,7 +7,7 @@ public class PracticeMonoBehaviours : MonoBehaviour
     public float speed;
 
 
-    public UnityEvent fastEvent, slowEvent;
+    /*public UnityEvent fastEvent, slowEvent;
     private void start()
     {
         startEvent.Invoke();
@@ -28,5 +28,5 @@ public class PracticeMonoBehaviours : MonoBehaviour
             moveVelocity = -speed;
         }
     }
-
 }
+*/
