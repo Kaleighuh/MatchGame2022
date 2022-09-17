@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class IntData : ScriptableObject
 {
-    //public UnityEvent disableEvent;
+   // public UnityEvent disableEvent;
     public int value;
 
     public void SetValue(int num)
@@ -21,9 +22,9 @@ public class IntData : ScriptableObject
         value += num;
     }
 
-    public void CompareValue(intData obj)
+    public void CompareValue(IntData obj)
     {
-        if (value >= obj.value)
+        if (value <= obj.value)
         {
             
         }

@@ -1,27 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DraggableBehaviour : MonoBehaviour
+public class DraggableBehaviour2 : MonoBehaviour
 {
     private Camera cameraObj;
     public bool draggable;
     public Vector3 position, offset;
     public UnityEvent startDragEvent, endDragEvent;
     void Start()
-    {
-        cameraObj = cameraObj.main;
+    { 
+        cameraObj = Camera.main;
     }
+
     public IEnumerator OnMouseDown()
     {
-        offset = transform.position - cameraObj.ScreenToViewpointPort(Input.mousePosition);
+        offset = transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition);
         draggable = true;
         startDragEvent.Invoke();
-        yield return new WaitForFixedUpdate();  
+        yield return new WaitForFixedUpdate();
+
         
         while (draggable)
         {
             yield return new WaitForFixedUpdate();
-            position = cameraObj.ScreenToViewpointPort(input.mousePosition) + offset;
+            position = cameraObj.ScreenToWorldPoint(Input.mousePosition) + offset;
             transform.position = position;
         }
     }

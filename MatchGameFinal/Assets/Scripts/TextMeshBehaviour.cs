@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using System.Globalization;
+using TMPro;
 
 
 public class TextMeshBehaviour : MonoBehaviour
