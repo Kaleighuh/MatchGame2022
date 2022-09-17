@@ -6,6 +6,8 @@ public class IntData : ScriptableObject
 {
    // public UnityEvent disableEvent;
     public int value;
+    public UnityEvent destroyEvent;
+
 
     public void SetValue(int num)
     {
@@ -33,6 +35,11 @@ public class IntData : ScriptableObject
             value = obj.value;
         }
     }
+	private void onDestroy()
+	{
+		value = 0;
+		destroyEvent.Invoke();
+	}
 
     /*private void OnDisable()
     {

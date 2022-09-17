@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class MonoEventsBehaviour : MonoBehaviour
 {
     public UnityEvent startEvent, awakeEvent, disableEvent;
+    public UnityEvent destroyEvent;
 
     private void Awake()
     {
@@ -18,6 +19,11 @@ public class MonoEventsBehaviour : MonoBehaviour
     private void Disable()
     {
         disableEvent.Invoke();
+    }
+    
+    private void onDestroy()
+    {
+        destroyEvent.Invoke();
     }
     
 }
