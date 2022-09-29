@@ -12,6 +12,12 @@ public class CoroutineBehaviour : MonoBehaviour
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wwfuObj;
 
+	public bool canRun
+	{
+		get => canRun;
+		set => canRun = value;
+	}
+
     private void Start()
     {
         wfsObj = new WaitForSeconds(seconds);
@@ -53,4 +59,5 @@ public class CoroutineBehaviour : MonoBehaviour
             repeatUntilFalseEvent.Invoke();
         }
     }
+	
 }
